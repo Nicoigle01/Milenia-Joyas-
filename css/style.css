@@ -360,12 +360,14 @@ footer {
         flex-wrap: wrap;
     }
 
+    .bienvenida{
+        height: 60vh;
+    }
     .subCajasInfo {
         width: 45%;
     }
 
     .informacionCompra,
-    .bienvenida,
     .mainPrincipal,
     .mainCatalogo,
     .mainContacto {
