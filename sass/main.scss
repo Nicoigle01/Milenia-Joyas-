@@ -1,0 +1,13 @@
+// sass --watch sass/main.scss css/style.css
+
+@use "utilities/variables";
+@use "utilities/mixins";
+
+@use "components/footer";
+@use "components/header";
+@use "components/whatsapp";
+
+@use "pages/home";
+@use "pages/contacto";
+@use "pages/catalogo";
+@use "pages/catalogo2";

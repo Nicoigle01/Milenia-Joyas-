@@ -1,0 +1,32 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 8vh;
+    background-color: v.$fondoHeader;
+    @include m.flex(row, nowrap,space-around,center);
+    ul {
+        li {
+            a {
+                .logoHeader {
+                    width: 4.5vw;
+                    height: 6.5vh;
+                }
+
+                .tituloPrincipal {
+                    font-family: v.$fuenteHeader;
+                }
+            }
+        }
+    }
+    nav{
+        &.navHeader{
+            @include m.flex(row, nowrap,space-around,center);
+            gap:10px;
+        }
+    }
+    
+}

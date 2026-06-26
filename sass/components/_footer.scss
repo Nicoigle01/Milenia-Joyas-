@@ -1,0 +1,14 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+footer{
+    height: 10vh;
+    background-color: v.$fondoHeader;
+    section{
+       &.informacionConsumidor{
+        @include m.flex(row, wrap, space-around, center);
+        padding-top:20px;
+        }
+
+    }
+}
