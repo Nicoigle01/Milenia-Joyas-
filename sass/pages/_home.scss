@@ -3,6 +3,9 @@
 
 .mainPrincipal {
     background-image: url(../img/productosFondoDifuminados.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     height: 92vh;
 
     .sectionPrincipal {

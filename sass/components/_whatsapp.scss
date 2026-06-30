@@ -1,24 +1,19 @@
 section.wp{ 
     position:fixed;
-    background-color: rgb(0, 0, 0);
-    background-size: cover;
-    height: 40px;
-    width: 40px;
     bottom: 20px;
     right: 20px;
-    display: block;
-    ul{ 
-            li.logoWhatsapp{
+    
                   
                 a.wa{
-                    display: block;
-                    height: 40px;
-                    width: 40px;
+                    img{
+
+                        height:10vh ;
+                        width: auto;
+                    }
+                    /* height: 40px;
+                    width: 40px; */
                                         }
                 }
-            }
-
-        }
-
+            
 
 
