@@ -1,5 +1,6 @@
 @use "../utilities/mixins" as m;
 @use "../utilities/variables" as v;
+@use "../utilities/animation";
 
 .mainPrincipal {
     background-image: url(../img/productosFondoDifuminados.png);
@@ -52,9 +53,13 @@
         .cajaImgIndividual{
             background-color: v.$white;
             text-align: center;
+                &:hover{
+                    animation: scaleUpPrincipal 1s forwards;
+                }
+
+            }
         }
     }
-}
 
 .bienvenida{
     height: 35vh;

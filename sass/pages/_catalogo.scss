@@ -1,5 +1,6 @@
 @use "../utilities/mixins" as m;
 @use "../utilities/variables" as v;
+@use "../utilities/animation";
 
 .mainCatalogo {
     height: 90vh;
@@ -33,6 +34,9 @@
             background-color: v.$white;
             height: 35vh;
             text-align: center;
+            &:hover{
+                animation: scaleUpCatalogo 0.5s forwards;
+            }
         }
         .selectorPagina{
             background-color: rgba(255, 255, 255, 0);

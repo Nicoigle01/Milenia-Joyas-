@@ -61,12 +61,25 @@ section.wp {
   right: 20px;
 }
 section.wp a.wa img {
-  height: 10vh;
+  height: 8vh;
   width: auto;
 }
-section.wp a.wa {
-  /* height: 40px;
-  width: 40px; */
+
+@keyframes scaleUpPrincipal {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.2;
+  }
+}
+@keyframes scaleUpCatalogo {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+  }
 }
 
 .mainPrincipal {
@@ -123,6 +136,9 @@ section.wp a.wa {
 .mainPrincipal .imgCajaPrincipal .cajaImgIndividual {
   background-color: rgb(255, 255, 255);
   text-align: center;
+}
+.mainPrincipal .imgCajaPrincipal .cajaImgIndividual:hover {
+  animation: scaleUpPrincipal 1s forwards;
 }
 
 .bienvenida {
@@ -262,6 +278,9 @@ section.wp a.wa {
   background-color: rgb(255, 255, 255);
   height: 35vh;
   text-align: center;
+}
+.mainCatalogo .cajaCatalogo .cajaImgCat:hover {
+  animation: scaleUpCatalogo 0.5s forwards;
 }
 .mainCatalogo .cajaCatalogo .selectorPagina {
   background-color: rgba(255, 255, 255, 0);
