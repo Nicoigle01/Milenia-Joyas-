@@ -47,35 +47,42 @@
             }
         }
     }
-    .imgCajaPrincipal{
+
+    .imgCajaPrincipal {
         margin: 30px 200px;
         @include m.flex(row, nowrap, space-around, center);
-        .cajaImgIndividual{
+
+        .cajaImgIndividual {
             background-color: v.$white;
             text-align: center;
-                &:hover{
-                    animation: scaleUpPrincipal 1s forwards;
-                }
 
+            &:hover {
+                animation: scaleUpPrincipal 1s forwards;
             }
+
         }
     }
 
-.bienvenida{
+
+}
+
+.bienvenida {
     height: 35vh;
     background-color: v.$white;
-    .cajaBienvenida{
-        @include m.flex(column, nowrap,center, start);
+
+    .cajaBienvenida {
+        @include m.flex(column, nowrap, center, start);
         width: 100%;
         padding: 5vh 15vh;
 
-        h3{
+        h3 {
             border-top: 1px solid v.$black;
             padding-top: 1vh;
             font-size: 30px;
             font-family: v.$fuenteTitulos;
         }
-        p{
+
+        p {
             padding-top: 2vh;
             width: 70%;
             font-size: 18px;
@@ -84,23 +91,54 @@
     }
 }
 
-.informacionCompra{
-    .cajaInformacionCompra{
+.informacionCompra {
+    .cajaInformacionCompra {
         @include m.flex(row, nowrap, center, center);
         padding: 3vh;
-        gap:30px;
+        gap: 30px;
         background-color: rgb(255, 255, 167);
 
-        .subCajasInfo{
+        .subCajasInfo {
             @include m.flex(column, nowrap, start, center);
-            img{
+
+            img {
                 height: 4vh;
             }
-            p{
+
+            p {
                 padding-top: 1vh;
                 text-align: justify;
                 width: 20vw;
             }
+        }
+    }
+}
+
+@include m.mobile {
+    .mainPrincipal {
+        .sectionPrincipal {
+            @include m.flex(column, nowrap, center, center);
+            .cajaPrincipal {
+                margin-left: 0px;
+                margin-top: 50px;
+                width: 80%;
+                height: auto;
+                padding: 10px;
+                h2.tituloSectionPrincipal {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 16px;
+                }
+                ul{
+                    li{
+                        .botonCatalogo{
+                        position:center;   
+                        }
+                    }
+                }
+            }
+
         }
     }
 }

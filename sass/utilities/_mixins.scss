@@ -1,4 +1,5 @@
-@mixin flex($dir, $fw, $jc, $ai){
+/*display flex*/
+@mixin flex($dir, $fw, $jc, $ai) {
     display: flex;
     flex-direction: $dir;
     flex-wrap: $fw;
@@ -6,6 +7,35 @@
     align-items: $ai;
 }
 
-@mixin mayusc{
+/*Mayusculas*/
+@mixin mayusc {
     text-transform: uppercase;
+}
+
+/*Mobile*/
+@mixin mobile {
+    @media (min-width:300px) and (max-width: 525px) {
+        @content;
+    }
+}
+
+/*Tablet*/
+@mixin tablet{
+    @media (min-width: 526px) and (max-width: 967px){
+        @content;
+    }
+}
+
+/*Notebook*/
+@mixin notebook{
+    @media (min-width: 968px) and (max-width: 1440px){
+        @content;
+    }
+}
+
+/*Desktop*/
+@mixin desktop{
+    @media (min-width: 1441px){
+        @content;
+    }
 }

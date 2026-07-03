@@ -14,6 +14,12 @@ ul {
   list-style: none;
 }
 
+/*display flex*/
+/*Mayusculas*/
+/*Mobile*/
+/*Tablet*/
+/*Notebook*/
+/*Desktop*/
 footer {
   height: 10vh;
   background-color: rgb(248, 204, 237);
@@ -191,6 +197,31 @@ section.wp a.wa img {
   width: 20vw;
 }
 
+@media (min-width: 300px) and (max-width: 525px) {
+  .mainPrincipal .sectionPrincipal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainPrincipal .sectionPrincipal .cajaPrincipal {
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+  }
+  .mainPrincipal .sectionPrincipal .cajaPrincipal h2.tituloSectionPrincipal {
+    font-size: 25px;
+  }
+  .mainPrincipal .sectionPrincipal .cajaPrincipal p {
+    font-size: 16px;
+  }
+  .mainPrincipal .sectionPrincipal .cajaPrincipal ul li .botonCatalogo {
+    position: center;
+  }
+}
 .mainContacto {
   background-color: rgb(208, 238, 247);
   height: 92vh;
