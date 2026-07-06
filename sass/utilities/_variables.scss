@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@100..900&family=Red+Hat+Mono:wght@300..700&family=Spline+Sans:wght@300..700&display=swap");
+
+
+$fuenteHeader: "Bebas Neue";
+$fuenteTitulos: "Red Hat Mono";
+$fuenteP: Heebo;
+$fondoHeader:rgb(248, 204, 237) ;
+$fondoCatalogo:rgb(255, 255, 222) ;
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color :$black;
+}
+
+ul{
+    list-style: none;
+}

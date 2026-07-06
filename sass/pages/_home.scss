@@ -1,0 +1,144 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+@use "../utilities/animation";
+
+.mainPrincipal {
+    background-image: url(../img/productosFondoDifuminados.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 92vh;
+
+    .sectionPrincipal {
+        @include m.flex(row, nowrap, flex-start, center);
+
+        .cajaPrincipal {
+            width: 500px;
+            height: 200px;
+            background-color: rgba(255, 255, 2555, 0.319);
+            margin-left: 100px;
+            margin-top: 140px;
+            padding: 10px;
+            @include m.flex(column, nowrap, start, start);
+            border-radius: 8px;
+
+            h2.tituloSectionPrincipal {
+                @include m.mayusc;
+                font-family: v.$fuenteTitulos;
+                font-size: 30px;
+
+            }
+
+            p {
+                font-size: 18px;
+                margin: 5px 0;
+            }
+
+
+            ul {
+                li {
+                    .botonCatalogo {
+                        display: inline-block;
+                        padding: 8px 10px;
+                        border: 1px solid rgb(0, 0, 0);
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .imgCajaPrincipal {
+        margin: 30px 200px;
+        @include m.flex(row, nowrap, space-around, center);
+
+        .cajaImgIndividual {
+            background-color: v.$white;
+            text-align: center;
+
+            &:hover {
+                animation: scaleUpPrincipal 1s forwards;
+            }
+
+        }
+    }
+
+
+}
+
+.bienvenida {
+    height: 35vh;
+    background-color: v.$white;
+
+    .cajaBienvenida {
+        @include m.flex(column, nowrap, center, start);
+        width: 100%;
+        padding: 5vh 15vh;
+
+        h3 {
+            border-top: 1px solid v.$black;
+            padding-top: 1vh;
+            font-size: 30px;
+            font-family: v.$fuenteTitulos;
+        }
+
+        p {
+            padding-top: 2vh;
+            width: 70%;
+            font-size: 18px;
+        }
+
+    }
+}
+
+.informacionCompra {
+    .cajaInformacionCompra {
+        @include m.flex(row, nowrap, center, center);
+        padding: 3vh;
+        gap: 30px;
+        background-color: rgb(255, 255, 167);
+
+        .subCajasInfo {
+            @include m.flex(column, nowrap, start, center);
+
+            img {
+                height: 4vh;
+            }
+
+            p {
+                padding-top: 1vh;
+                text-align: justify;
+                width: 20vw;
+            }
+        }
+    }
+}
+
+@include m.mobile {
+    .mainPrincipal {
+        .sectionPrincipal {
+            @include m.flex(column, nowrap, center, center);
+            .cajaPrincipal {
+                margin-left: 0px;
+                margin-top: 50px;
+                width: 80%;
+                height: auto;
+                padding: 10px;
+                h2.tituloSectionPrincipal {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 16px;
+                }
+                ul{
+                    li{
+                        .botonCatalogo{
+                        position:center;   
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
