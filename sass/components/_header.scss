@@ -12,12 +12,15 @@ header {
         li {
             a {
                 .logoHeader {
-                    width: 4.5vw;
-                    height: 6.5vh;
+                    width: auto;
+                    height: 6vh;
                 }
 
                 .tituloPrincipal {
                     font-family: v.$fuenteHeader;
+                    font-size: 200%;
+                    font-weight: 700;
+                    align-items: center;
                 }
             }
         }
@@ -26,6 +29,27 @@ header {
         &.navHeader{
             @include m.flex(row, nowrap,space-around,center);
             gap:10px;
+        }
+    }
+}
+
+@include m.mobile{
+    header{
+        height: 10vh;
+        ul{
+            li{
+                a{
+                    .logoHeader{
+                        width: 15vw;
+                        height: 8vh;
+                    }
+                }
+            }
+        }
+    }
+    nav{
+        &.navHeader{
+            
         }
     }
 }
