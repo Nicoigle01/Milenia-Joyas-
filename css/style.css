@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Heebo", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -12,6 +16,8 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*display flex*/
@@ -32,6 +38,13 @@ footer section.informacionConsumidor {
   align-items: center;
   padding-top: 20px;
 }
+footer section.informacionConsumidor div p {
+  margin: 0;
+}
+footer section.informacionConsumidor div ul {
+  margin: 0;
+  padding: 0;
+}
 
 header {
   position: sticky;
@@ -46,11 +59,14 @@ header {
   align-items: center;
 }
 header ul li a .logoHeader {
-  width: 4.5vw;
-  height: 6.5vh;
+  width: auto;
+  height: 6vh;
 }
 header ul li a .tituloPrincipal {
   font-family: "Bebas Neue";
+  font-size: 200%;
+  font-weight: 700;
+  align-items: center;
 }
 header nav.navHeader {
   display: flex;
@@ -61,6 +77,15 @@ header nav.navHeader {
   gap: 10px;
 }
 
+@media (min-width: 300px) and (max-width: 525px) {
+  header {
+    height: 10vh;
+  }
+  header ul li a .logoHeader {
+    width: 15vw;
+    height: 8vh;
+  }
+}
 section.wp {
   position: fixed;
   bottom: 20px;
@@ -103,10 +128,10 @@ section.wp a.wa img {
 }
 .mainPrincipal .sectionPrincipal .cajaPrincipal {
   width: 500px;
-  height: 200px;
+  height: 220px;
   background-color: rgba(255, 255, 255, 0.319);
   margin-left: 100px;
-  margin-top: 140px;
+  margin-top: 130px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -119,10 +144,15 @@ section.wp a.wa img {
   text-transform: uppercase;
   font-family: "Red Hat Mono";
   font-size: 30px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
 }
 .mainPrincipal .sectionPrincipal .cajaPrincipal p {
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 450;
   margin: 5px 0;
+  font-family: "Heebo";
+  margin-bottom: 0;
 }
 .mainPrincipal .sectionPrincipal .cajaPrincipal ul li .botonCatalogo {
   display: inline-block;
@@ -145,9 +175,12 @@ section.wp a.wa img {
 .mainPrincipal .imgCajaPrincipal .cajaImgIndividual:hover {
   animation: scaleUpPrincipal 1s forwards;
 }
+.mainPrincipal .imgCajaPrincipal .cajaImgIndividual ul li a p {
+  margin-bottom: 0;
+}
 
 .bienvenida {
-  height: 35vh;
+  height: 30vh;
   background-color: rgb(255, 255, 255);
 }
 .bienvenida .cajaBienvenida {
@@ -164,11 +197,15 @@ section.wp a.wa img {
   padding-top: 1vh;
   font-size: 30px;
   font-family: "Red Hat Mono";
+  font-weight: 700;
 }
 .bienvenida .cajaBienvenida p {
   padding-top: 2vh;
-  width: 70%;
+  width: 80%;
   font-size: 18px;
+  font-family: "Heebo";
+  margin-left: 10px;
+  text-align: justify;
 }
 
 .informacionCompra .cajaInformacionCompra {
@@ -180,6 +217,7 @@ section.wp a.wa img {
   padding: 3vh;
   gap: 30px;
   background-color: rgb(255, 255, 167);
+  height: 20vh;
 }
 .informacionCompra .cajaInformacionCompra .subCajasInfo {
   display: flex;
@@ -219,7 +257,9 @@ section.wp a.wa img {
     font-size: 16px;
   }
   .mainPrincipal .sectionPrincipal .cajaPrincipal ul li .botonCatalogo {
-    position: center;
+    display: inline-block;
+    padding: 5px 8px;
+    margin-left: 100px;
   }
 }
 .mainContacto {

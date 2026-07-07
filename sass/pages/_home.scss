@@ -14,10 +14,10 @@
 
         .cajaPrincipal {
             width: 500px;
-            height: 200px;
-            background-color: rgba(255, 255, 2555, 0.319);
+            height: 220px;
+            background-color: rgba(255, 255, 255, 0.319);
             margin-left: 100px;
-            margin-top: 140px;
+            margin-top: 130px;
             padding: 10px;
             @include m.flex(column, nowrap, start, start);
             border-radius: 8px;
@@ -26,12 +26,17 @@
                 @include m.mayusc;
                 font-family: v.$fuenteTitulos;
                 font-size: 30px;
+                font-weight: 700;
+                color: v.$black;
 
             }
 
             p {
-                font-size: 18px;
+                font-size: 17px;
+                font-weight: 450;
                 margin: 5px 0;
+                font-family: v.$fuenteP;
+                margin-bottom: 0;
             }
 
 
@@ -59,6 +64,15 @@
             &:hover {
                 animation: scaleUpPrincipal 1s forwards;
             }
+            ul{
+                li{
+                    a{
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
 
         }
     }
@@ -67,7 +81,7 @@
 }
 
 .bienvenida {
-    height: 35vh;
+    height: 30vh;
     background-color: v.$white;
 
     .cajaBienvenida {
@@ -80,12 +94,17 @@
             padding-top: 1vh;
             font-size: 30px;
             font-family: v.$fuenteTitulos;
+            font-weight: 700;
         }
 
         p {
             padding-top: 2vh;
-            width: 70%;
+            width: 80%;
             font-size: 18px;
+            font-family: v.$fuenteP;
+            margin-left: 10px;
+            text-align:justify;
+
         }
 
     }
@@ -97,7 +116,7 @@
         padding: 3vh;
         gap: 30px;
         background-color: rgb(255, 255, 167);
-
+        height: 20vh;
         .subCajasInfo {
             @include m.flex(column, nowrap, start, center);
 
@@ -133,8 +152,10 @@
                 ul{
                     li{
                         .botonCatalogo{
-                        position:center;   
-                        }
+                            display:inline-block;
+                           padding: 5px 8px;
+                           margin-left: 100px;
+                         }
                     }
                 }
             }
