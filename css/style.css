@@ -313,7 +313,7 @@ section.wp a.wa img {
 }
 
 .mainCatalogo {
-  height: 90vh;
+  height: 92vh;
   background-color: rgb(255, 255, 222);
   display: flex;
 }
@@ -336,6 +336,9 @@ section.wp a.wa img {
   gap: 10px;
   padding-top: 50px;
 }
+.mainCatalogo .filtrosCategoria .tituloFiltro p {
+  margin-bottom: 0;
+}
 .mainCatalogo .cajaCatalogo {
   padding: 50px 0px 0px 50px;
   display: grid;
@@ -346,11 +349,15 @@ section.wp a.wa img {
 }
 .mainCatalogo .cajaCatalogo .cajaImgCat {
   background-color: rgb(255, 255, 255);
-  height: 35vh;
+  height: 36vh;
   text-align: center;
+  padding: 10px 10px 25px 10px;
 }
 .mainCatalogo .cajaCatalogo .cajaImgCat:hover {
   animation: scaleUpCatalogo 0.5s forwards;
+}
+.mainCatalogo .cajaCatalogo .cajaImgCat ul li a p {
+  margin-bottom: 0;
 }
 .mainCatalogo .cajaCatalogo .selectorPagina {
   background-color: rgba(255, 255, 255, 0);
@@ -358,6 +365,7 @@ section.wp a.wa img {
   grid-row: 3/4;
   height: 67px;
   place-content: center;
+  animation: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */

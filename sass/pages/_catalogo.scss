@@ -3,13 +3,15 @@
 @use "../utilities/animation";
 
 .mainCatalogo {
-    height: 90vh;
+    height: 92vh;
     background-color: v.$fondoCatalogo;
     display: flex;
+
     h3 {
-                font-family: v.$fuenteTitulos;
-                font-size: 18px;
-            }
+        font-family: v.$fuenteTitulos;
+        font-size: 18px;
+    }
+
     .filtrosCategoria {
         height: 90vh;
         width: 20vw;
@@ -21,29 +23,48 @@
             @include m.flex(column, nowrap, center, center);
             gap: 10px;
             padding-top: 50px;
-        }
-    }
-    .cajaCatalogo{
-        padding: 50px 0px 0px 50px;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 250px 250px 67px;
-        gap:20px;
-        height: 80vh;
-        .cajaImgCat{
-            background-color: v.$white;
-            height: 35vh;
-            text-align: center;
-            &:hover{
-                animation: scaleUpCatalogo 0.5s forwards;
+            p{
+                margin-bottom: 0;
             }
         }
-        .selectorPagina{
-            background-color: rgba(255, 255, 255, 0);
-            grid-column: 1/5;
-            grid-row: 3/4;
-            height: 67px;
-            place-content: center;
-        }
     }
+
+    .cajaCatalogo {
+        padding: 50px 0px 0px 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 250px 250px 67px;
+        gap: 20px;
+        height: 80vh;
+
+        .cajaImgCat {
+            background-color: v.$white;
+            height: 36vh;
+            text-align: center;
+            padding: 10px 10px 25px 10px;
+            &:hover {
+                animation: scaleUpCatalogo 0.5s forwards;
+            }
+
+            ul {
+                li {
+                    a {
+                        p {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .selectorPagina {
+        background-color: rgba(255, 255, 255, 0);
+        grid-column: 1/5;
+        grid-row: 3/4;
+        height: 67px;
+        place-content: center;
+        animation: none !important;
+    }
+    }
+
+    
 }
