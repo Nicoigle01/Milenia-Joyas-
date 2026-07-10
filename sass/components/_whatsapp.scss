@@ -1,3 +1,7 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+@use "../utilities/animation";
+
 section.wp {
     position: fixed;
     bottom: 20px;
@@ -8,6 +12,16 @@ section.wp {
 
             height: 8vh;
             width: auto;
+        }
+    }
+}
+
+@include m.mobile {
+    section.wp {
+        a.wa {
+            img {
+                height: 6vh;
+            }
         }
     }
 }
