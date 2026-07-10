@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@100..900&family=Red+Hat+Mono:wght@300..700&family=Spline+Sans:wght@300..700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                 </a>
             </li>
         </ul>
-         <div class="dropdown">
+        <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle bg-transparent border border-light" type="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 ≡
@@ -55,9 +55,42 @@
         <section class="filtrosCategoria">
             <div class="tituloFiltro">
                 <h3>Productos</h3>
-                <p>Aros</p>
-                <p>Anillos</p>
-                <p>Collares</p>
+                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                    <div class="btn-group btn-group-sm" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle  bg-transparent text-body border border-white" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Aros
+                        </button>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item-text"  href="#">Dorados</a></li>
+                            <li><a class="dropdown-item-text" href="#">Plateados</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                    <div class="btn-group btn-group-sm" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle  bg-transparent text-body border border-white" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Anillos
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item-text"  href="#">Dorados</a></li>
+                            <li><a class="dropdown-item-text" href="#">Plateados</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                    <div class="btn-group btn-group-sm" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle  bg-transparent text-body border border-white" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Collares
+                        </button>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item-text"  href="#">Dorados</a></li>
+                            <li><a class="dropdown-item-text" href="#">Plateados</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="cajaCatalogo">
@@ -76,9 +109,9 @@
                 <ul>
                     <li>
                         <a href="#">
-                <img src="../imgAros/aroBlurDorado.jpg" alt="Aro derretido dorado">
-                <p>Aro forma derretido dorado</p>
-                <p>$1.200</p>
+                            <img src="../imgAros/aroBlurDorado.jpg" alt="Aro derretido dorado">
+                            <p>Aro forma derretido dorado</p>
+                            <p>$1.200</p>
                         </a>
                     </li>
                 </ul>
@@ -87,9 +120,9 @@
                 <ul>
                     <li>
                         <a href="#">
-                <img src="../imgCollares/collarCorazonDorado.jpg" alt="Collar corazon dorado">
-                <p>Collar corazon dorado</p>
-                <p>$1.100</p>
+                            <img src="../imgCollares/collarCorazonDorado.jpg" alt="Collar corazon dorado">
+                            <p>Collar corazon dorado</p>
+                            <p>$1.100</p>
                         </a>
                     </li>
                 </ul>
@@ -98,9 +131,9 @@
                 <ul>
                     <li>
                         <a href="#">
-                <img src="../imgAnillos/anilloBe.jpg" alt="Anillo be dorado">
-                <p>Anillo forma V dorado</p>
-                <p>$1.000</p>
+                            <img src="../imgAnillos/anilloBe.jpg" alt="Anillo be dorado">
+                            <p>Anillo forma V dorado</p>
+                            <p>$1.000</p>
                         </a>
                     </li>
                 </ul>
@@ -109,9 +142,9 @@
                 <ul>
                     <li>
                         <a href="#">
-                <img src="../imgAros/aroHexaDorado.jpg" alt="Aros hexagonales dorados">
-                <p>Aro hexagonal dorado</p>
-                <p>$1.250</p>
+                            <img src="../imgAros/aroHexaDorado.jpg" alt="Aros hexagonales dorados">
+                            <p>Aro hexagonal dorado</p>
+                            <p>$1.250</p>
                         </a>
                     </li>
                 </ul>
@@ -120,9 +153,9 @@
                 <ul>
                     <li>
                         <a href="#">
-                <img src="../imgAnillos/anilloCorazonDorado.jpg" alt="Anillo corazon dorado">
-                <p>Anillo corazon dorado</p>
-                <p>$1.100</p>
+                            <img src="../imgAnillos/anilloCorazonDorado.jpg" alt="Anillo corazon dorado">
+                            <p>Anillo corazon dorado</p>
+                            <p>$1.100</p>
                         </a>
                     </li>
                 </ul>
@@ -147,15 +180,19 @@
                             <p>$1.150</p>
                         </a>
                     </li>
-                </ul>   
+                </ul>
             </div>
-            <div class="cajaImgCat selectorPagina">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="./catalogo.html">1</a>
-                            <a href="./catalogo2.html">2</a>
-                            <a href="./catalogo2.html"> Siguiente</a>
+            <div class="selectorPagina">
+                <nav aria-label=" Page navigation example">
+                    <ul class="bg-transparent text-body pagination justify-content-center">
+                        <li class="page-item"><a class="page-link bg-transparent text-body" href="./catalogo.html">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link bg-transparent text-body"
+                                href="./catalogo2.html">2</a></li>
+                        <li class="page-item">
+                            <a class="page-link bg-transparent text-body" href="./catalogo2.html" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
