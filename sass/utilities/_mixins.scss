@@ -14,28 +14,34 @@
 
 /*Mobile*/
 @mixin mobile {
-    @media (min-width:300px) and (max-width: 525px) {
+    @media (max-width: 575px) {
         @content;
     }
 }
 
 /*Tablet*/
 @mixin tablet{
-    @media (min-width: 526px) and (max-width: 967px){
+    @media (min-width: 576px) and (max-width: 769px){
         @content;
     }
 }
 
 /*Notebook*/
-@mixin notebook{
-    @media (min-width: 968px) and (max-width: 1440px){
+@mixin notebookS{
+    @media (min-width: 770px) and (max-width: 1025px){
+        @content;
+    }
+}
+
+@mixin notebookL{
+    @media (min-width: 1026px) and (mx-width:1920){
         @content;
     }
 }
 
 /*Desktop*/
 @mixin desktop{
-    @media (min-width: 1441px){
+    @media (min-width: 1921px){
         @content;
     }
 }
