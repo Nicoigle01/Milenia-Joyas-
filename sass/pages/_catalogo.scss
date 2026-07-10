@@ -7,11 +7,6 @@
     background-color: v.$fondoCatalogo;
     display: flex;
 
-    h3 {
-        font-family: v.$fuenteTitulos;
-        font-size: 18px;
-    }
-
     .filtrosCategoria {
         height: 90vh;
         width: 20vw;
@@ -23,8 +18,26 @@
             @include m.flex(column, nowrap, center, center);
             gap: 10px;
             padding-top: 50px;
-            p{
+
+            h3 {
+                font-family: v.$fuenteTitulos;
+                font-size: 18px;
+            }
+
+            p {
                 margin-bottom: 0;
+            }
+        }
+
+        .botonesFiltros {
+            padding: 0;
+
+            ul {
+                li {
+                    a {
+                        font-size: 14px;
+                    }
+                }
             }
         }
     }
@@ -42,6 +55,7 @@
             height: 36vh;
             text-align: center;
             padding: 10px 10px 25px 10px;
+
             &:hover {
                 animation: scaleUpCatalogo 0.5s forwards;
             }
@@ -56,15 +70,33 @@
                 }
             }
         }
+
         .selectorPagina {
-        background-color: rgba(255, 255, 255, 0);
-        grid-column: 1/5;
-        grid-row: 3/4;
-        height: 67px;
-        place-content: center;
-        animation: none !important;
-    }
+            background-color: rgba(255, 255, 255, 0);
+            grid-column: 1/5;
+            grid-row: 3/4;
+            height: 67px;
+            place-content: center;
+            animation: none !important;
+        }
     }
 
-    
+
+}
+
+@include m.mobile {
+    .mainCatalogo {
+        height: auto;
+        .filtrosCategoria {
+            height: auto;
+            width: auto;
+            padding-left: 0px;
+            .tituloFiltro{
+            h3{
+                font-size: 15px;
+            }    
+            }
+            
+        }
+    }
 }
