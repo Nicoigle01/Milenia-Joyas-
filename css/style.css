@@ -184,8 +184,30 @@ section.wp a.wa img {
 }
 
 @media (max-width: 575px) {
-  section.wp a.wa img {
+  section.wp {
+    bottom: 10px;
+    right: 10px;
+  }
+  section.wp ul li a.wa img {
     height: 6vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 769px) {
+  section.wp {
+    bottom: 15px;
+    right: 15px;
+  }
+  section.wp ul li a.wa img {
+    height: 7vh;
+  }
+}
+@media (min-width: 1921px) {
+  section.wp {
+    bottom: 25px;
+    right: 25px;
+  }
+  section.wp ul li a.wa img {
+    height: 9vh;
   }
 }
 .mainPrincipal {
@@ -642,7 +664,7 @@ section.wp a.wa img {
   background-color: rgb(255, 255, 255);
   height: 36vh;
   text-align: center;
-  padding: 10px 10px 25px 10px;
+  padding: 10px 10px 40px 10px;
 }
 .mainCatalogo .cajaCatalogo .cajaImgCat:hover {
   animation: scaleUpCatalogo 0.5s forwards;
@@ -662,14 +684,186 @@ section.wp a.wa img {
 @media (max-width: 575px) {
   .mainCatalogo {
     height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
   }
   .mainCatalogo .filtrosCategoria {
     height: auto;
     width: auto;
-    padding-left: 0px;
+    padding-left: 5px;
+  }
+  .mainCatalogo .filtrosCategoria .tituloFiltro {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
   }
   .mainCatalogo .filtrosCategoria .tituloFiltro h3 {
     font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .mainCatalogo .filtrosCategoria .tituloFiltro .botonesFiltros {
+    font-size: 12.5px;
+  }
+  .mainCatalogo .filtrosCategoria .tituloFiltro .botonesFiltros ul li a {
+    font-size: 12.5px;
+  }
+  .mainCatalogo .cajaCatalogo {
+    height: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px 200px 200px 50px;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat {
+    height: 200px;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat:hover {
+    animation: none;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat ul li a img {
+    height: 150px;
+    width: auto;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat ul li a p {
+    font-size: 12.5px;
+  }
+  .mainCatalogo .cajaCatalogo .fotoUno {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .mainCatalogo .cajaCatalogo .fotoDos {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .mainCatalogo .cajaCatalogo .selectorPagina {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    padding-bottom: 20px;
+    height: auto;
+  }
+  .mainCatalogo .cajaCatalogo .selectorPagina ul {
+    align-items: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 769px) {
+  .mainCatalogo {
+    height: auto;
+  }
+  .mainCatalogo .filtrosCategoria {
+    width: auto;
+    padding-left: 20px;
+  }
+  .mainCatalogo .filtrosCategoria .tituloFiltro {
+    padding-top: 40px;
+  }
+  .mainCatalogo .filtrosCategoria .tituloFiltro h3 {
+    font-size: 17.5;
+  }
+  .mainCatalogo .cajaCatalogo {
+    height: auto;
+    padding-top: 40px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 220px 220px 220px 220px 50px;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat {
+    height: 220px;
+    padding-bottom: 35px;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat:hover {
+    animation: none;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat ul li a img {
+    height: 170px;
+    width: auto;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat ul li a p {
+    font-size: 13.5px;
+  }
+  .mainCatalogo .cajaCatalogo .fotoCuatro {
+    height: auto;
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+  .mainCatalogo .cajaCatalogo .fotoCuatro ul li a img {
+    height: 350px;
+  }
+  .mainCatalogo .cajaCatalogo .fotoCuatro ul li a p {
+    font-size: 20px;
+  }
+  .mainCatalogo .cajaCatalogo .selectorPagina {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    height: auto;
+  }
+}
+@media (min-width: 770px) and (max-width: 1025px) {
+  .mainCatalogo {
+    height: auto;
+  }
+  .mainCatalogo .filtrosCategoria {
+    height: auto;
+    width: auto;
+    padding-left: 25px;
+  }
+  .mainCatalogo .cajaCatalogo {
+    height: auto;
+    padding-left: 25px;
+    grid-template-rows: 225px 225px 60px;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat {
+    height: auto;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat ul li a img {
+    height: 175px;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat ul li a p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1921px) {
+  .mainCatalogo {
+    height: auto;
+  }
+  .mainCatalogo .filtrosCategoria {
+    width: auto;
+  }
+  .mainCatalogo .filtrosCategoria .tituloFiltro h3 {
+    font-size: 30px;
+  }
+  .mainCatalogo .filtrosCategoria .tituloFiltro .botonesFiltros {
+    font-size: 25px;
+  }
+  .mainCatalogo .filtrosCategoria .tituloFiltro .botonesFiltros ul li a {
+    font-size: 23px;
+  }
+  .mainCatalogo .cajaCatalogo {
+    height: auto;
+    padding: 60px;
+    grid-template-rows: 40vh 40vh 5vh;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat {
+    height: 40vh;
+    padding-bottom: 60px;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat ul li a img {
+    height: 35vh;
+  }
+  .mainCatalogo .cajaCatalogo .cajaImgCat ul li a p {
+    font-size: 22px;
+  }
+  .mainCatalogo .cajaCatalogo .selectorPagina nav {
+    size: 5vh;
+  }
+  .mainCatalogo .cajaCatalogo .selectorPagina nav ul li {
+    size: 5vh;
   }
 }
 
