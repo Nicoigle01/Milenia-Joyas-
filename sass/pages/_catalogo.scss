@@ -3,7 +3,7 @@
 @use "../utilities/animation";
 
 .mainCatalogo {
-    height: 92vh;
+    height: auto;
     background-color: v.$fondoCatalogo;
     display: flex;
 
@@ -11,13 +11,13 @@
         height: 90vh;
         width: 20vw;
         display: block;
-        padding-left: 100px;
+        padding-left: 15.5vh;
 
 
         .tituloFiltro {
             @include m.flex(column, nowrap, center, center);
-            gap: 10px;
-            padding-top: 50px;
+            gap:1vh;
+            padding-top: 7.2vh;
 
             h3 {
                 font-family: v.$fuenteTitulos;
@@ -46,15 +46,15 @@
         padding: 50px 0px 0px 50px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 250px 250px 67px;
-        gap: 20px;
-        height: 80vh;
+        grid-template-rows: 255px 255px 60px;
+        gap: 30px;
+        height: auto;
 
         .cajaImgCat {
             background-color: v.$white;
-            height: 36vh;
+            height: 260px;
             text-align: center;
-            padding: 10px 10px 40px 10px;
+            padding: 10px;
 
             &:hover {
                 animation: scaleUpCatalogo 0.5s forwards;
@@ -63,8 +63,11 @@
             ul {
                 li {
                     a {
-                        p {
+                        p{
                             margin-bottom: 0;
+                        }
+                        .precio {
+                            margin-bottom:5px;
                         }
                     }
                 }
@@ -105,7 +108,7 @@
 
 
                 .botonesFiltros {
-                    font-size: 12.5px;
+                    font-size: 12.5px   ;
                     ul {
                         li {
                             a {
@@ -124,10 +127,10 @@
             padding: 10px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 200px 200px 200px 200px 50px;
-
+            grid-template-rows: 31vh 31vh 31vh 31VH 7.7vh;
+            gap:5px;
             .cajaImgCat {
-                height: 200px;
+                height: 31vh;
 
                 &:hover {
                     animation: none;
@@ -138,7 +141,7 @@
                     li {
                         a {
                             img {
-                                height: 150px;
+                                height: 23.2vh;
                                 width: auto;
                             }
 
