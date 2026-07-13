@@ -870,19 +870,19 @@ section.wp a.wa img {
     size: 5vh;
   }
 }
-main {
+.mainProducto {
   display: grid;
   grid-template-columns: auto 1024px auto;
   grid-template-rows: auto auto;
 }
-main div {
+.mainProducto div {
   grid-column: 2/3;
 }
-main div nav ol .navSupProductos {
+.mainProducto div nav ol .navSupProductos {
   font-size: 14px;
   opacity: 50%;
 }
-main .cajaProductos {
+.mainProducto .cajaProductos {
   grid-column: 2/3;
   display: flex;
 }
