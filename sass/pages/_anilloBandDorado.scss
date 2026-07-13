@@ -1,0 +1,24 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+@use "../utilities/animation";
+
+.mainProducto{
+    display: grid;
+    grid-template-columns: auto 1024px auto;
+    grid-template-rows: auto auto;
+    div{
+        grid-column: 2/3;
+        nav{
+            ol{
+                .navSupProductos{
+                    font-size: 14px;
+                    opacity: 50%;
+                }
+            }
+        }
+    }
+    .cajaProductos{
+    grid-column: 2/3;
+    display: flex;
+    }
+}

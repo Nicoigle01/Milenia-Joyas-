@@ -1,0 +1,92 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+footer {
+    height: 10vh;
+    background-color: v.$fondoHeader;
+
+    section {
+        &.informacionConsumidor {
+            @include m.flex(row, wrap, space-around, center);
+            padding-top: 20px;
+            div{
+                p{
+                    margin:0;
+                    font-size: 18px;
+                }
+            }
+            div{
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+}
+
+@include m.mobile{
+    footer{
+        height: auto;
+        section{
+            &.informacionConsumidor{
+                @include m.flex(column, nowrap, center, center);
+                gap: 10px;
+                padding-top: 20px;
+                div{
+                    p{
+                    
+                        font-size: 15px;
+                    }
+                }
+                div{
+                    ul{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include m.notebookS{
+    footer{
+        section{
+            div{
+                p{
+                    font-size: 17.5px;
+                }
+            }
+            div{
+                ul{
+                    li{
+                        a{
+                            font-size: 17.5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include m.desktop{
+    footer{
+        section{
+            &.informacionConsumidor{
+            div{
+                p{
+                    font-size: 32px;
+                }
+            }
+            div{
+                ul{li{a{
+                    font-size: 32px;
+                }}}
+            }
+        }
+    }
+}
+}

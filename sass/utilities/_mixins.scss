@@ -1,0 +1,47 @@
+/*display flex*/
+@mixin flex($dir, $fw, $jc, $ai) {
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $fw;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+/*Mayusculas*/
+@mixin mayusc {
+    text-transform: uppercase;
+}
+
+/*Mobile*/
+@mixin mobile {
+    @media (max-width: 575px) {
+        @content;
+    }
+}
+
+/*Tablet*/
+@mixin tablet{
+    @media (min-width: 576px) and (max-width: 769px){
+        @content;
+    }
+}
+
+/*Notebook*/
+@mixin notebookS{
+    @media (min-width: 770px) and (max-width: 1025px){
+        @content;
+    }
+}
+
+@mixin notebookL{
+    @media (min-width: 1026px) and (mx-width:1920){
+        @content;
+    }
+}
+
+/*Desktop*/
+@mixin desktop{
+    @media (min-width: 1921px){
+        @content;
+    }
+}

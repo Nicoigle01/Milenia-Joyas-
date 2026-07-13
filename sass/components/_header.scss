@@ -1,0 +1,121 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 8vh;
+    background-color: v.$fondoHeader;
+    @include m.flex(row, nowrap, space-around, center);
+
+    ul {
+        li {
+            a {
+                .logoHeader {
+                    width: auto;
+                    height: 6vh;
+                }
+
+            }
+        }
+    }
+
+    ul {
+        li {
+            a {
+                .tituloPrincipal {
+                    font-family: v.$fuenteHeader;
+                    font-size: 200%;
+                    font-weight: 700;
+                    align-items: center;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .dropdown {
+        height: auto;
+    }
+}
+
+@include m.mobile {
+    header {
+        height: 10vh;
+
+        ul {
+            li {
+                a {
+                    .logoHeader {
+                        width: auto;
+                        height: 6vh;
+                    }
+                }
+            }
+        }
+
+        ul {
+            li {
+                a {
+                    .tituloPrincipal {
+                        font-size: 160%;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include m.tablet {
+    header {
+        height: 7vh;
+
+        ul {
+            li {
+                a {
+                    .logoHeader {
+                        height: 5vh;
+                    }
+                }
+            }
+        }
+
+        ul {
+            li {
+                a {
+                    .tituloPrincipal {
+                        font-size: 175%;
+                    }
+                }
+            }
+        }
+
+        .dropdown {
+            .dropdown-toggle {
+                height: 5vh;
+            }
+        }
+    }
+}
+
+@include m.desktop{
+    header{
+        ul{
+            li{
+                a{
+                    .tituloPrincipal{
+                        font-size: 75px;
+                    }
+                }
+            }
+        }
+        .dropdown{
+            .dropdown-toggle{
+                height: 5vh;
+                width: 80px;
+            }
+        }
+    }
+}

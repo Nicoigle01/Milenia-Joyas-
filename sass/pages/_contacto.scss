@@ -1,0 +1,47 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+@use "../utilities/animation";
+
+.mainContacto{
+    background-color: rgb(208, 238, 247);
+    height: 92vh;
+    .textContacto{
+        color:rgb(119,119,119);
+        padding: 50px 10vw 0px 30vw;
+        
+    }
+    .formularioContacto{
+        @include m.flex(column, nowrap,center, start);
+        padding: 50px 10vw 0px 30vw;
+        .cajaFormulario{
+            @include m.flex(column, nowrap,center, start);
+            width: 40vw;
+            .titulosFormularios{
+                font-family: "Spline Sans";
+                text-transform: uppercase;
+            }
+            input{
+                width: 500px;
+                padding: 12px;
+                border-radius: 4px;
+                border: 1px solid rgba(0,0,0,.3);
+            }
+            .textAreaContacto{
+                width: 600px;
+                height: 150px;
+                border-radius: 4px;
+                border: 1px solid rgba(0, 0, 0, .3);
+            }
+        }
+        .buttonEnviar{
+            padding-top: 50px;
+            
+            .textoEnviar{
+                width: 200px;
+                height: 30px;
+                background-color: rgba(255, 255, 255, 0.1);
+                font-family: v.$fuenteTitulos;
+            }
+        }
+    }
+}

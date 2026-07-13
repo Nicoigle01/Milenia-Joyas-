@@ -1,0 +1,68 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+@use "../utilities/animation";
+
+section.wp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    a.wa {
+        img {
+
+            height: 8vh;
+            width: auto;
+        }
+    }
+}
+
+@include m.mobile {
+    section.wp {
+        bottom: 10px;
+        right: 10px;
+
+        ul {
+            li {
+                a.wa {
+                    img {
+                        height: 6vh;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@include m.tablet{
+    section.wp{
+        bottom:15px;
+        right: 15px;
+        ul{
+            li{
+                a.wa{
+                    img{
+                        height: 7vh;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include m.desktop{
+    section.wp{
+        bottom:25px;
+        right: 25px;
+        ul{
+            li{
+                a.wa{
+                    img{
+                        height: 9vh;
+                    }
+                }
+            }
+        }
+    }
+}

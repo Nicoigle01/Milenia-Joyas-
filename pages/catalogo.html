@@ -5,101 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@100..900&family=Red+Hat+Mono:wght@300..700&family=Spline+Sans:wght@300..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <section>
-        <div>
-            <ul>
-                <li class="logoWhatsapp">
-                    <a class="wa" href="https://wa.me/5491132017045" target="_blank" alt="Whatsapp"> </a>
-                </li>
-            </ul>
-        </div>
+     <section class="wp">
+        <ul>
+            <li>
+                <a class="wa" href="https://wa.me/5491132017045" target="_blank" aria-label="Whatsapp">
+                    <img src="../img/logoWa.png" alt="Logo de Whatsapp"> </a>
+            </li>
+        </ul>
     </section>
     <header>
-        <a href="../index.html">
-            <img src="../img/mileniaJoyasChico.jpg" alt="Logo principal" class="logoHeader">
-        </a>
-        <a href="../index.html">
-            <h1 class="tituloPrincipal">Milenia joyas</h1>
-        </a>
-        <nav class="navHeader">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <img src="../img/mileniaJoyasChico.jpg" alt="Logo principal" class="logoHeader">
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <h1 class="tituloPrincipal">Milenia joyas</h1>
+                </a>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle bg-transparent border border-light" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                ≡
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
             </ul>
-            <ul>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        </div>
     </header>
     <main class="mainCatalogo">
         <section class="filtrosCategoria">
             <div class="tituloFiltro">
                 <h3>Productos</h3>
-                <p>Aros</p>
-                <p>Anillos</p>
-                <p>Collares</p>
+                <p class="d-inline-flex gap-1">
+                    <button class="botonesFiltros btn btn-primary bg-transparent text-body border border-white"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseAros" aria-expanded="false"
+                        aria-controls="collapseAros">
+                        Aros ▾
+                    </button>
+                </p>
+                <div class="collapse " id="collapseAros">
+                    <div class="botonesFiltros card card-body bg-transparent text-body border border-white h-25">
+                        <ul>
+                            <li>
+                                <a href="#">Dorados</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="botonesFiltros card card-body bg-transparent text-body border border-white h-25  ">
+                        <ul>
+                            <li>
+                                <a href="#">Plateado</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="d-inline-flex gap-1">
+                    <button class="botonesFiltros btn btn-primary bg-transparent text-body border border-white"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseAnillos" aria-expanded="false"
+                        aria-controls="collapseAnillos">
+                        Anillos ▾
+                    </button>
+                </p>
+                <div class="collapse " id="collapseAnillos">
+                    <div class="botonesFiltros card card-body bg-transparent text-body border border-white h-25">
+                        <ul>
+                            <li>
+                                <a href="#">Dorados</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="botonesFiltros card card-body bg-transparent text-body border border-white h-25  ">
+                        <ul>
+                            <li>
+                                <a href="#">Plateado</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="d-inline-flex gap-1">
+                    <button class="botonesFiltros btn btn-primary bg-transparent text-body border border-white"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseCollares" aria-expanded="false"
+                        aria-controls="collapseCollares">
+                        Collares ▾
+                    </button>
+                </p>
+                <div class="collapse " id="collapseCollares">
+                    <div class="botonesFiltros card card-body bg-transparent text-body border border-white h-25">
+                        <ul>
+                            <li>
+                                <a href="#">Dorados</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="botonesFiltros card card-body bg-transparent text-body border border-white h-25  ">
+                        <ul>
+                            <li>
+                                <a href="#">Plateado</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="cajaCatalogo">
-            <div class="cajaImgCat">
-                <img src="../imgAnillos/anilloBandDorado.jpg" alt="Anillo bandas dorado">
-                <p>Anillo de bandas dorado</p>
-                <p>$1.000</p>
+            <div class="cajaImgCat fotoUno">
+                <ul>
+                    <li>
+                        <a href="../pagesProductos/pagesAnillos/anilloBandDorado.html">
+                            <img src="../imgAnillos/anilloBand/anilloBandDoradoChico.jpg" alt="Anillo bandas dorado">
+                            <p>Anillo de bandas</p>
+                            <p class="precio">$1.000</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cajaImgCat fotoDos">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../imgAros/aroBlur/aroBlurDoradoChico.jpg" alt="Aro derretido dorado">
+                            <p>Aro forma derretido</p>
+                            <p class="precio">$1.200</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="cajaImgCat">
-                <img src="../imgAros/aroBlurDorado.jpg" alt="Aro derretido dorado">
-                <p>Aro forma derretido dorado</p>
-                <p>$1.200</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../imgCollares/collarCorazon/collarCorazonDoradoChico.jpg" alt="Collar corazon dorado">
+                            <p>Collar corazon</p>
+                            <p class="precio">$1.100</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cajaImgCat fotoCuatro">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../imgAnillos/anilloBe/anilloBeChico.jpg" alt="Anillo be dorado">
+                            <p>Anillo forma V</p>
+                            <p class="precio">$1.000</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="cajaImgCat">
-                <img src="../imgCollares/collarCorazonDorado.jpg" alt="Collar corazon dorado">
-                <p>Collar corazon dorado</p>
-                <p>$1.100</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../imgAros/aroHexagono/aroHexaDoradoChico.jpg" alt="Aros hexagonales dorados">
+                            <p>Aro hexagonal</p>
+                            <p class="precio">$1.250</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="cajaImgCat">
-                <img src="../imgAnillos/anilloBe.jpg" alt="Anillo be dorado">
-                <p>Anillo forma V dorado</p>
-                <p>$1.000</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../imgAnillos/anilloCorazon/anilloCorazonDoradoChico.jpg" alt="Anillo corazon dorado">
+                            <p>Anillo corazon</p>
+                            <p class="precio">$1.100</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="cajaImgCat">
-                <img src="../imgAros/aroHexaDorado.jpg" alt="Aros hexagonales dorados">
-                <p>Aro hexagonal dorado</p>
-                <p>$1.250</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../imgCollares/collarCoraDoble/collarCorazonDobleDoradoChico.jpg" alt="Collar doble corazon dorado">
+                            <p>Collar doble corazon</p>
+                            <p class="precio">$1.500</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="cajaImgCat">
-                <img src="../imgAnillos/anilloCorazonDorado.jpg" alt="Anillo corazon dorado">
-                <p>Anillo corazon dorado</p>
-                <p>$1.100</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../imgAnillos/anilloCorazones/anilloCorazonesDoradoChico.jpg" alt="Anillo de corazones dorado">
+                            <p>Anillo corazones</p>
+                            <p class="precio">$1.150</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="cajaImgCat">
-                <img src="../imgCollares/collarCorazonDobleDorado.jpg" alt="Collar dobre corazon dorado">
-                <p>Collar doble corazones dorado</p>
-                <p>$1.500</p>
-            </div>
-            <div class="cajaImgCat">
-                <img src="../imgAnillos/anilloCorazonesDorado.jpg" alt="Anillo de corazones dorado">
-                <p>Anillo corazones dorado</p>
-                <p>$1.150</p>
-            </div>
-            <div class="cajaImgCat selectorPagina">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="./catalogo.html">1</a>
-                            <a href="./catalogo2.html">2</a>
-                            <a href="./catalogo2.html"> Siguiente</a>
+            <div class="selectorPagina">
+                <nav aria-label=" Page navigation example">
+                    <ul class="bg-transparent text-body pagination justify-content-center">
+                        <li class="page-item"><a class="page-link bg-transparent text-body" href="./catalogo.html">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link bg-transparent text-body"
+                                href="./catalogo2.html">2</a></li>
+                        <li class="page-item">
+                            <a class="page-link bg-transparent text-body" href="./catalogo2.html" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -120,6 +245,9 @@
             </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

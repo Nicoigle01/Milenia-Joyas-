@@ -1,0 +1,489 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+@use "../utilities/animation";
+
+.mainPrincipal {
+    background-image: url(../img/productosFondoDifuminados.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 92vh;
+
+    .sectionPrincipal {
+        @include m.flex(row, nowrap, flex-start, center);
+
+        .cajaPrincipal {
+            width: 500px;
+            height: 220px;
+            background-color: rgba(255, 255, 255, 0.319);
+            margin-left: 100px;
+            margin-top: 130px;
+            padding: 10px;
+            @include m.flex(column, nowrap, start, start);
+            border-radius: 8px;
+
+            h2.tituloSectionPrincipal {
+                @include m.mayusc;
+                font-family: v.$fuenteTitulos;
+                font-size: 30px;
+                font-weight: 700;
+                color: v.$black;
+
+            }
+
+            p {
+                font-size: 17px;
+                font-weight: 450;
+                margin: 5px 0;
+                font-family: v.$fuenteP;
+                margin-bottom: 0;
+            }
+
+
+            ul {
+                li {
+                    .botonCatalogo {
+                        display: inline-block;
+                        padding: 8px 10px;
+                        border: 1px solid rgb(0, 0, 0);
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .imgCajaPrincipal {
+        margin: 30px 200px;
+        @include m.flex(row, nowrap, space-around, center);
+
+        .cajaImgIndividual {
+            background-color: v.$white;
+            text-align: center;
+
+            &:hover {
+                animation: scaleUpPrincipal 1s forwards;
+            }
+
+            ul {
+                li {
+                    a {
+                        p {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}
+
+.bienvenida {
+    height: 35vh;
+    background-color: v.$white;
+
+    .cajaBienvenida {
+        @include m.flex(column, nowrap, center, start);
+        width: 100%;
+        padding: 5vh 15vh;
+        animation: fadeInLeft 1.5s forwards;
+        animation-timeline: scroll();
+
+        h3 {
+            border-top: 1px solid v.$black;
+            padding-top: 1vh;
+            font-size: 30px;
+            font-family: v.$fuenteTitulos;
+            font-weight: 700;
+
+        }
+
+        p {
+            padding-top: 2vh;
+            width: 80%;
+            font-size: 18px;
+            font-family: v.$fuenteP;
+            margin-left: 10px;
+            text-align: justify;
+
+        }
+
+    }
+}
+
+.informacionCompra {
+    .cajaInformacionCompra {
+        @include m.flex(row, nowrap, center, center);
+        padding: 3vh;
+        gap: 30px;
+        background-color: rgb(255, 255, 167);
+        height: auto;
+
+        .subCajasInfo {
+            @include m.flex(column, nowrap, start, center);
+
+            img {
+                height: 4vh;
+            }
+
+            p {
+                padding-top: 1vh;
+                text-align: center;
+                width: 20vw;
+
+            }
+
+        }
+    }
+}
+
+@include m.mobile {
+
+    .mainPrincipal {
+        height: auto;
+        padding-bottom: 30px;
+
+        .sectionPrincipal {
+            @include m.flex(column, nowrap, center, center);
+
+            .cajaPrincipal {
+                margin-left: 0px;
+                margin-top: 30px;
+                width: 90%;
+                height: auto;
+                padding: 10px;
+
+                h2.tituloSectionPrincipal {
+                    font-size: 25px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                ul {
+                    margin-left: 125px;
+
+                }
+            }
+
+        }
+
+        .imgCajaPrincipal {
+            margin: auto;
+            @include m.flex(column, nowrap, center, center);
+
+            .cajaImgIndividual {
+                margin-top: 20px;
+
+                &:hover {
+                    animation: none;
+                }
+
+
+
+                ul {
+                    li {
+                        a {
+                            p {
+                                margin-bottom: 0;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .bienvenida {
+        height: auto;
+
+        .cajaBienvenida {
+            padding: 10px 15px;
+
+            h3 {
+                font-size: 20px;
+                animation: fadeInLeft 0.9s forwards;
+                animation-timeline: scroll();
+
+            }
+
+            p {
+                font-size: 15px;
+                padding-top: 0;
+            }
+        }
+
+
+    }
+
+    .informacionCompra {
+        .cajaInformacionCompra {
+            height: auto;
+            gap: 10px;
+        }
+
+        .subCajasInfo {
+            img {
+                height: 3vh;
+            }
+
+            p {
+                font-size: 0px !important;
+            }
+        }
+    }
+}
+
+@include m.tablet {
+    .mainPrincipal {
+        height: 90vh;
+        padding-bottom: 20px;
+
+        .sectionPrincipal {
+            @include m.flex(column, nowrap, center, center);
+
+            .cajaPrincipal {
+                margin-top: 50px;
+                height: auto;
+                margin-left: 0px;
+
+                h2.tituloSectionPrincipal {
+                    font-size: 27.5px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                ul {
+                    margin-left: 190px;
+
+                }
+            }
+
+        }
+
+        .imgCajaPrincipal {
+            margin: auto;
+
+            .cajaImgIndividual {
+                margin-top: 20px;
+
+                &:hover {
+                    animation: none;
+                }
+
+                ul {
+                    li {
+                        a {
+                            p {
+                                margin-bottom: 0;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .bienvenida {
+        height: auto;
+
+        .cajaBienvenida {
+            padding: 10px 15px;
+            animation: fadeInLeft 2s forwards;
+            animation-timeline: scroll();
+
+            h3 {
+                font-size: 23px;
+
+            }
+
+            p {
+                font-size: 18px;
+                padding-top: 0;
+            }
+        }
+    }
+
+    .informacionCompra {
+        .cajaInformacionCompra {
+            padding: 5px;
+            gap: 2px;
+            height: auto;
+
+            .subCajasInfo {
+                width: 100%;
+
+                img {
+                    height: 22px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+    }
+}
+
+@include m.notebookS {
+    .mainPrincipal {
+        .sectionPrincipal {
+            .cajaPrincipal {
+                margin-top: 50px;
+
+                h2.tituloSectionPrincipal {
+                    font-size: 28.5px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .imgCajaPrincipal {
+            margin: 25px 125px;
+
+            .cajaImgIndividual {
+
+                &:hover {
+                    animation: scaleUpPrincipal 1.2s forwards;
+
+                }
+            }
+        }
+
+    }
+
+    .bienvenida {
+        height: auto;
+
+        .cajaBienvenida {
+            padding: 15px 45px;
+            animation: fadeInLeft 1.35s forwards;
+            animation-timeline: scroll();
+
+            h3 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 18px;
+                padding-top: 2px;
+            }
+        }
+    }
+
+    .informacionCompra {
+        .cajaInformacionCompra {
+            padding: 5px;
+            gap: 4px;
+            height: auto;
+
+            .subCajasInfo {
+                width: 100%;
+
+                img {
+                    height: 23px;
+                }
+
+                p {
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@include m.desktop {
+
+    .mainPrincipal {
+        .sectionPrincipal {
+            .cajaPrincipal {
+                width: 1000px;
+                height: 450px;
+                margin-top: 200px;
+                margin-left: 200px;
+                padding: 40px;
+
+                h2.tituloSectionPrincipal {
+                    font-size: 55px;
+                }
+
+                p {
+                    font-size: 30px;
+
+                }
+
+                ul {
+                    li {
+                        .botonCatalogo {
+                            padding: 25px 18px;
+                            font-size: 35px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .imgCajaPrincipal {
+            margin-top: 65px;
+
+            .cajaImgIndividual {
+                ul {
+                    li {
+                        a {
+                            img {
+                                height: 30vh;
+                            }
+
+                            p {
+                                font-size: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bienvenida {
+        .cajaBienvenida {
+            padding: 2vh 10vh;
+
+            h3 {
+                font-size: 60px;
+            }
+
+            p {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .informacionCompra {
+        height: auto;
+
+        .cajaInformacionCompra {
+            gap: 35px;
+
+            .subCajasInfo {
+                p {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
