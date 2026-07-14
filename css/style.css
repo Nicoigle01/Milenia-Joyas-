@@ -890,6 +890,16 @@ section.wp a.wa img {
   display: flex;
   flex-direction: column;
 }
+.mainProducto .cajaProductos .cajaIzquierda .descripcionProducto {
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid rgb(213, 213, 213);
+}
+.mainProducto .cajaProductos .cajaIzquierda .descripcionProducto .textoDescripcion {
+  color: rgb(85, 85, 85);
+  font-size: 16px;
+  margin-bottom: 0px;
+}
 .mainProducto .cajaProductos .producto {
   width: 350px;
   display: flex;
@@ -937,6 +947,26 @@ section.wp a.wa img {
 }
 .mainProducto .cajaProductos .producto .botonCompra {
   margin-top: 30px;
+}
+.mainProducto .cajaProductos .producto .mediosDePago {
+  margin-top: 40px;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+.mainProducto .cajaProductos .producto .mediosDePago .titleMediosPago {
+  padding-top: 20px;
+  font-size: 20px;
+}
+.mainProducto .cajaProductos .producto .mediosDePago .titleMediosPagoh4 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.mainProducto .cajaProductos .producto .mediosDePago .imgTarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
