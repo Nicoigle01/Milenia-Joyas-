@@ -23,7 +23,10 @@
     .cajaProductos {
         grid-column: 2/3;
         display: flex;
-
+        .cajaIzquierda{
+            display: flex;
+            flex-direction: column;
+        }
         .producto {
             width: 350px;
             display: flex;
@@ -76,6 +79,7 @@
             }
             .botonCompra{
                 margin-top: 30px;
+
             }
         }
     }
