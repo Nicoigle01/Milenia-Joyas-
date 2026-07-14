@@ -886,5 +886,53 @@ section.wp a.wa img {
   grid-column: 2/3;
   display: flex;
 }
+.mainProducto .cajaProductos .producto {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.mainProducto .cajaProductos .producto .tituloPrecio .tituloProducto {
+  font-size: 22px;
+  margin-top: 10px;
+  font-family: "Red Hat Mono";
+}
+.mainProducto .cajaProductos .producto .tituloPrecio .precioProducto {
+  font-size: 27px;
+  padding-left: 20px;
+}
+.mainProducto .cajaProductos .producto .selector {
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+.mainProducto .cajaProductos .producto .selector .colorSelector {
+  margin-bottom: 2px;
+  font-family: "Heebo";
+}
+.mainProducto .cajaProductos .producto .selectorCantidad {
+  padding-top: 20px;
+}
+.mainProducto .cajaProductos .producto .infoCompra {
+  margin-top: 35px;
+}
+.mainProducto .cajaProductos .producto .infoCompra .infoComprador {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.mainProducto .cajaProductos .producto .infoCompra .infoComprador img {
+  height: 25px;
+}
+.mainProducto .cajaProductos .producto .infoCompra .infoComprador p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.mainProducto .cajaProductos .producto .botonCompra {
+  margin-top: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */

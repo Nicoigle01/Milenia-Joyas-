@@ -2,23 +2,81 @@
 @use "../utilities/variables" as v;
 @use "../utilities/animation";
 
-.mainProducto{
+.mainProducto {
     display: grid;
     grid-template-columns: auto 1024px auto;
     grid-template-rows: auto auto;
-    div{
+
+    div {
         grid-column: 2/3;
-        nav{
-            ol{
-                .navSupProductos{
+
+        nav {
+            ol {
+                .navSupProductos {
                     font-size: 14px;
                     opacity: 50%;
                 }
             }
         }
     }
-    .cajaProductos{
-    grid-column: 2/3;
-    display: flex;
+
+    .cajaProductos {
+        grid-column: 2/3;
+        display: flex;
+
+        .producto {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+            .tituloPrecio {
+                .tituloProducto {
+                    font-size: 22px;
+                    margin-top: 10px;
+                    font-family: v.$fuenteTitulos;
+                }
+
+                .precioProducto {
+                    font-size: 27px;
+                    padding-left: 20px;
+                }
+            }
+
+            .selector {
+                border-top: 1px solid black;
+                padding-top: 20px;
+
+                .colorSelector {
+                    margin-bottom: 2px;
+                    font-family: v.$fuenteP;
+                }
+            }
+
+            .selectorCantidad {
+                padding-top: 20px;
+            }
+
+            .infoCompra {
+                margin-top: 35px;
+
+                .infoComprador {
+                    @include m.flex (row, nowrap, start, center);
+                    gap: 20px;
+                    margin-top: 10px;
+                    img{
+                        height: 25px;
+                    }
+                    p{
+                        
+                        font-size: 15px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .botonCompra{
+                margin-top: 30px;
+            }
+        }
     }
 }
