@@ -886,6 +886,10 @@ section.wp a.wa img {
   grid-column: 2/3;
   display: flex;
 }
+.mainProducto .cajaProductos .cajaIzquierda {
+  display: flex;
+  flex-direction: column;
+}
 .mainProducto .cajaProductos .producto {
   width: 350px;
   display: flex;
@@ -935,4 +939,4 @@ section.wp a.wa img {
   margin-top: 30px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
