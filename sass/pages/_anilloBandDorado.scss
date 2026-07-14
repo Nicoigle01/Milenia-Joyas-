@@ -23,10 +23,24 @@
     .cajaProductos {
         grid-column: 2/3;
         display: flex;
-        .cajaIzquierda{
+
+        .cajaIzquierda {
             display: flex;
             flex-direction: column;
+
+            .descripcionProducto {
+                margin-top: 40px;
+                padding-top: 15px;
+                border-top: 1px solid rgb(213, 213, 213);
+
+                .textoDescripcion {
+                    color: rgb(85, 85, 85);
+                    font-size: 16px;
+                    margin-bottom: 0px;
+                }
+            }
         }
+
         .producto {
             width: 350px;
             display: flex;
@@ -67,19 +81,43 @@
                     @include m.flex (row, nowrap, start, center);
                     gap: 20px;
                     margin-top: 10px;
-                    img{
+
+                    img {
                         height: 25px;
                     }
-                    p{
-                        
+
+                    p {
+
                         font-size: 15px;
                         margin-bottom: 0;
                     }
                 }
             }
-            .botonCompra{
+
+            .botonCompra {
                 margin-top: 30px;
 
+            }
+
+            .mediosDePago {
+                margin-top: 40px;
+                border-top: 1px solid rgb(0, 0, 0);
+
+                .titleMediosPago {
+                    padding-top: 20px;
+                    font-size: 20px;
+
+                }
+
+                .titleMediosPagoh4 {
+                    margin-top: 20px;
+                    font-size: 16px;
+                }
+                .imgTarjetas{
+                    @include m.flex(row, wrap, start,center);
+                    gap: 15px;
+                    
+                }
             }
         }
     }
