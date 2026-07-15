@@ -889,6 +889,8 @@ section.wp a.wa img {
 .mainProducto .cajaProductos .cajaIzquierda {
   display: flex;
   flex-direction: column;
+  margin: 15px;
+  width: 70%;
 }
 .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto {
   margin-top: 40px;
@@ -969,4 +971,86 @@ section.wp a.wa img {
   gap: 15px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+@media (max-width: 575px) {
+  .mainProducto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  .mainProducto div.mx-auto {
+    height: 20px;
+  }
+  .mainProducto div.mx-auto nav ol .navSupProductos {
+    font-size: 10px !important;
+  }
+  .mainProducto .cajaProductos {
+    border-top: 2px solid black !important;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda {
+    display: contents;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes {
+    order: 1;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes .imgChicas {
+    height: auto;
+    width: 80% !important;
+    flex-direction: row !important;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes .imgChicas button {
+    width: 100px;
+    margin-bottom: 0 !important;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto {
+    order: 5;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mainProducto .cajaProductos .producto {
+    display: contents;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual {
+    margin-top: 10px;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    order: 2;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .tituloPrecio .tituloProducto {
+    font-size: 30px !important;
+    padding-left: 20px;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .tituloPrecio .precioProducto {
+    padding-left: 30px;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .tituloPrecio p {
+    padding-left: 30px;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .selector {
+    padding-left: 25px;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .selectorCantidad {
+    padding-left: 25px;
+  }
+  .mainProducto .cajaProductos .producto .infoCompra {
+    order: 3;
+    padding-left: 25px;
+  }
+  .mainProducto .cajaProductos .producto .botonCompra {
+    order: 4;
+  }
+  .mainProducto .cajaProductos .producto .mediosDePago {
+    order: 6;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
