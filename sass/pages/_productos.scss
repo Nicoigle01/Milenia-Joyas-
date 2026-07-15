@@ -1,6 +1,6 @@
-@use "../utilities/mixins" as m;
-@use "../utilities/variables" as v;
-@use "../utilities/animation";
+@use "../../sass/utilities/mixins" as m;
+@use "../../sass/utilities/variables" as v;
+@use "../../sass/utilities/animation";
 
 .mainProducto {
     display: grid;
@@ -27,6 +27,8 @@
         .cajaIzquierda {
             display: flex;
             flex-direction: column;
+            margin: 15px;
+            width: 70%;
 
             .descripcionProducto {
                 margin-top: 40px;
@@ -72,6 +74,7 @@
 
             .selectorCantidad {
                 padding-top: 20px;
+            
             }
 
             .infoCompra {
@@ -113,10 +116,119 @@
                     margin-top: 20px;
                     font-size: 16px;
                 }
-                .imgTarjetas{
-                    @include m.flex(row, wrap, start,center);
+
+                .imgTarjetas {
+                    @include m.flex(row, wrap, start, center);
                     gap: 15px;
-                    
+
+                }
+            }
+        }
+    }
+}
+
+@include m.mobile {
+    .mainProducto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+
+        div.mx-auto {
+            height: 20px;
+
+            nav {
+                ol {
+                    .navSupProductos {
+                        font-size: 10px !important;
+
+                    }
+                }
+            }
+        }
+
+        .cajaProductos {
+            border-top: 2px solid black !important;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            border-left: none !important;
+            border-right: none !important;
+
+            .cajaIzquierda {
+                display: contents;
+
+                .cajaImagenes {
+                    order: 1;
+                    flex-direction: column-reverse;
+                    align-items: center;
+
+                    .imgChicas {
+                        height: auto;
+                        width: 80% !important;
+                        flex-direction: row !important;
+
+                        button {
+                            width: 100px;
+                            margin-bottom: 0 !important;
+                        }
+                    }
+
+                }
+
+
+                .descripcionProducto {
+                    order: 5;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+
+            .producto {
+                display: contents;
+
+                .selectorIndividual {
+                    margin-top: 10px;
+                    border-top: 1px solid black;
+                    padding-top: 20px;
+                    order: 2;
+
+                    .tituloPrecio {
+                        .tituloProducto {
+                            font-size: 30px !important;
+                            padding-left: 20px;
+                        }
+
+                        .precioProducto {
+                            padding-left: 30px;
+                        }
+
+                        p {
+                            padding-left: 30px;
+                        }
+                    }
+
+                    .selector {
+                        padding-left: 25px;
+                    }
+                    .selectorCantidad{
+                        padding-left: 25px;
+                    }
+                }
+
+                .infoCompra {
+                    order: 3;
+                    padding-left: 25px;
+                }
+
+                .botonCompra {
+                    order: 4;
+                }
+
+                .mediosDePago {
+                    order: 6;
+                    padding-left: 10px;
+                    padding-right: 10px;
                 }
             }
         }
