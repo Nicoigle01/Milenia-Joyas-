@@ -838,6 +838,7 @@ section.wp a.wa img {
   }
   .mainCatalogo .filtrosCategoria {
     width: auto;
+    padding-left: 80px;
   }
   .mainCatalogo .filtrosCategoria .tituloFiltro h3 {
     font-size: 30px;
@@ -1066,10 +1067,10 @@ section.wp a.wa img {
     padding: 10px;
   }
   .mainProducto div.mx-auto {
-    height: 25px;
+    height: 23px;
   }
   .mainProducto div.mx-auto nav ol .navSupProductos {
-    font-size: 15px !important;
+    font-size: 13px !important;
   }
   .mainProducto .cajaProductos {
     border-top: 2px solid black !important;
@@ -1084,22 +1085,37 @@ section.wp a.wa img {
   }
   .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes {
     order: 1;
-    flex-direction: column-reverse;
     align-items: center;
   }
   .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes .imgChicas {
-    height: auto;
-    width: 90% !important;
-    flex-direction: row !important;
+    width: 100px !important;
+    margin-left: 20px;
   }
   .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes .imgChicas button {
     width: 100px;
     margin-bottom: 0 !important;
   }
+  .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes .imgGrandes {
+    max-width: 400px !important;
+    width: 100%;
+    margin-left: 100px;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes .imgGrandes .carouser-inner .carouser-item {
+    max-height: 400px !important;
+  }
   .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto {
     order: 5;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto h4 {
+    font-size: 22px;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto h2 {
+    font-size: 21px !important;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto .textoDescripcion {
+    font-size: 18px;
   }
   .mainProducto .cajaProductos .producto {
     display: contents;
@@ -1111,24 +1127,35 @@ section.wp a.wa img {
     order: 2;
   }
   .mainProducto .cajaProductos .producto .selectorIndividual .tituloPrecio .tituloProducto {
-    font-size: 30px !important;
+    font-size: 33px !important;
     padding-left: 20px;
   }
   .mainProducto .cajaProductos .producto .selectorIndividual .tituloPrecio .precioProducto {
     padding-left: 30px;
+    font-size: 25px;
   }
   .mainProducto .cajaProductos .producto .selectorIndividual .tituloPrecio p {
     padding-left: 30px;
+    font-size: 18px;
   }
   .mainProducto .cajaProductos .producto .selectorIndividual .selector {
     padding-left: 25px;
   }
+  .mainProducto .cajaProductos .producto .selectorIndividual .selector .colorSelector {
+    font-size: 19px;
+  }
   .mainProducto .cajaProductos .producto .selectorIndividual .selectorCantidad {
     padding-left: 25px;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .selectorCantidad .colorSelector {
+    font-size: 19px;
   }
   .mainProducto .cajaProductos .producto .infoCompra {
     order: 3;
     padding-left: 25px;
+  }
+  .mainProducto .cajaProductos .producto .infoCompra .infoComprador p {
+    font-size: 18px;
   }
   .mainProducto .cajaProductos .producto .botonCompra {
     order: 4;
@@ -1137,6 +1164,121 @@ section.wp a.wa img {
     order: 6;
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+@media (min-width: 770px) and (max-width: 1025px) {
+  .mainProducto {
+    grid-template-columns: auto 950px auto;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes .imgChicas {
+    margin-left: 10px;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes .imgGrandes {
+    max-width: 480px;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto h4 {
+    font-size: 20px;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto h2.textoDescripcion {
+    font-size: 19px !important;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto .textoDescripcion {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1921px) {
+  .mainProducto {
+    grid-template-columns: auto 2000px auto;
+  }
+  .mainProducto div nav ol .navSupProductos {
+    height: 40px;
+    font-size: 25px;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda {
+    width: 75%;
+    max-width: 1800px !important;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes {
+    max-width: 1100px !important;
+    margin-top: 20px;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes .imgChicas {
+    width: 160px !important;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes .imgGrandes {
+    padding-left: 20px;
+    width: 1100px;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes .imgGrandes .carouser-inner {
+    height: 100%;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .cajaImagenes .imgGrandes .carouser-inner .carouser-item {
+    height: 100%;
+    max-width: 110px !important;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto h4 {
+    font-size: 30px;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto h2 {
+    font-size: 26px !important;
+  }
+  .mainProducto .cajaProductos .cajaIzquierda .descripcionProducto .textoDescripcion {
+    font-size: 22px;
+  }
+  .mainProducto .cajaProductos .producto {
+    width: 550px;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .tituloPrecio .tituloProducto {
+    font-size: 40px;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .tituloPrecio .precioProducto {
+    font-size: 35px;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .tituloPrecio p {
+    font-size: 25px;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .selector p {
+    font-size: 25px;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .selector a {
+    font-size: 25px !important;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .selectorCantidad .colorSelector {
+    font-size: 25px;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .selectorCantidad div #inputCantidad {
+    font-size: 25px !important;
+    width: 100px !important;
+    height: 60px;
+  }
+  .mainProducto .cajaProductos .producto .selectorIndividual .selectorCantidad div span {
+    font-size: 25px !important;
+  }
+  .mainProducto .cajaProductos .producto .infoCompra .infoComprador img {
+    height: 40px;
+  }
+  .mainProducto .cajaProductos .producto .infoCompra .infoComprador p {
+    font-size: 25px;
+  }
+  .mainProducto .cajaProductos .producto .botonCompra button {
+    height: 60px;
+  }
+  .mainProducto .cajaProductos .producto .mediosDePago .titleMediosPago {
+    font-size: 30px;
+  }
+  .mainProducto .cajaProductos .producto .mediosDePago div .titleMediosPagoh4 {
+    font-size: 25px;
+  }
+  .mainProducto .cajaProductos .producto .mediosDePago div .imgTarjetas img {
+    height: 55px;
+    width: auto;
+  }
+  .mainProducto .cajaProductos .producto .mediosDePago div .imgTarjetas img.rapipago {
+    height: 25px;
   }
 }
 
