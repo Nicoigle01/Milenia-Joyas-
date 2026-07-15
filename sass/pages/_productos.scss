@@ -29,7 +29,6 @@
             flex-direction: column;
             margin: 15px;
             width: 70%;
-
             .descripcionProducto {
                 margin-top: 40px;
                 padding-top: 15px;
@@ -74,7 +73,7 @@
 
             .selectorCantidad {
                 padding-top: 20px;
-            
+
             }
 
             .infoCompra {
@@ -164,8 +163,125 @@
                     align-items: center;
 
                     .imgChicas {
+                        width: 70% !important;
+                        flex-direction: row !important;
+
+                        button {
+                            width: 100px;
+                            margin-bottom: 0 !important;
+                        }
+                    }
+                    .imgGrandes{
+                       max-width: 350px !important;
+                       width: 100% !important;
+                       .carouser-inner{
+                        .carouser-item{
+                            max-height: 350px !important;
+                        }
+                       }
+                    }
+
+                }
+
+
+                .descripcionProducto {
+                    order: 5;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+
+            .producto {
+                display: contents;
+
+                .selectorIndividual {
+                    margin-top: 10px;
+                    border-top: 1px solid black;
+                    padding-top: 20px;
+                    order: 2;
+
+                    .tituloPrecio {
+                        .tituloProducto {
+                            font-size: 25px !important;
+                            padding-left: 20px;
+                        }
+
+                        .precioProducto {
+                            padding-left: 30px;
+                        }
+
+                        p {
+                            padding-left: 30px;
+                        }
+                    }
+
+                    .selector {
+                        padding-left: 25px;
+                    }
+
+                    .selectorCantidad {
+                        padding-left: 25px;
+                    }
+                }
+
+                .infoCompra {
+                    order: 3;
+                    padding-left: 25px;
+                }
+
+                .botonCompra {
+                    order: 4;
+                }
+
+                .mediosDePago {
+                    order: 6;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@include m.tablet {
+    .mainProducto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+
+        div.mx-auto {
+            height: 25px;
+
+            nav {
+                ol {
+                    .navSupProductos {
+                        font-size: 15px !important;
+
+                    }
+                }
+            }
+        }
+
+        .cajaProductos {
+            border-top: 2px solid black !important;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            border-left: none !important;
+            border-right: none !important;
+
+            .cajaIzquierda {
+                display: contents;
+
+                .cajaImagenes {
+                    order: 1;
+                    flex-direction: column-reverse;
+                    align-items: center;
+
+                    .imgChicas {
                         height: auto;
-                        width: 80% !important;
+                        width: 90% !important;
                         flex-direction: row !important;
 
                         button {
@@ -211,7 +327,8 @@
                     .selector {
                         padding-left: 25px;
                     }
-                    .selectorCantidad{
+
+                    .selectorCantidad {
                         padding-left: 25px;
                     }
                 }
