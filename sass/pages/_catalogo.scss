@@ -11,7 +11,7 @@
         height: 90vh;
         width: 20vw;
         display: block;
-        padding-left: 15.5vh;
+        padding-left: 14vh;
 
 
         .tituloFiltro {
@@ -63,6 +63,9 @@
             ul {
                 li {
                     a {
+                        img{
+                            height: 200px;
+                        }
                         p{
                             margin-bottom: 0;
                         }
