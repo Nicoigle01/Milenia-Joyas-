@@ -628,7 +628,7 @@ section.wp a.wa img {
   height: 90vh;
   width: 20vw;
   display: block;
-  padding-left: 15.5vh;
+  padding-left: 14vh;
 }
 .mainCatalogo .filtrosCategoria .tituloFiltro {
   display: flex;
@@ -668,6 +668,9 @@ section.wp a.wa img {
 }
 .mainCatalogo .cajaCatalogo .cajaImgCat:hover {
   animation: scaleUpCatalogo 0.5s forwards;
+}
+.mainCatalogo .cajaCatalogo .cajaImgCat ul li a img {
+  height: 200px;
 }
 .mainCatalogo .cajaCatalogo .cajaImgCat ul li a p {
   margin-bottom: 0;
