@@ -2,45 +2,217 @@
 @use "../utilities/variables" as v;
 @use "../utilities/animation";
 
-.mainContacto{
+.mainContacto {
     background-color: rgb(208, 238, 247);
     height: 92vh;
-    .textContacto{
-        color:rgb(119,119,119);
-        padding: 50px 10vw 0px 30vw;
-        
+
+    .textContacto {
+        color: rgb(119, 119, 119);
+        display: flex;
+        justify-content: center;
+
     }
-    .formularioContacto{
-        @include m.flex(column, nowrap,center, start);
-        padding: 50px 10vw 0px 30vw;
-        .cajaFormulario{
-            @include m.flex(column, nowrap,center, start);
+
+    .formularioContacto {
+        @include m.flex(column, nowrap, center, center);
+        padding-top: 80px;
+
+        .cajaFormulario {
+            @include m.flex(column, nowrap, center, start);
             width: 40vw;
-            .titulosFormularios{
+
+            .titulosFormularios {
                 font-family: "Spline Sans";
                 text-transform: uppercase;
             }
-            input{
+
+            input {
                 width: 500px;
                 padding: 12px;
                 border-radius: 4px;
-                border: 1px solid rgba(0,0,0,.3);
+                border: 1px solid rgba(0, 0, 0, .3);
             }
-            .textAreaContacto{
+
+            .textAreaContacto {
                 width: 600px;
                 height: 150px;
                 border-radius: 4px;
                 border: 1px solid rgba(0, 0, 0, .3);
             }
         }
-        .buttonEnviar{
+
+        .buttonEnviar {
             padding-top: 50px;
-            
-            .textoEnviar{
+
+            .textoEnviar {
                 width: 200px;
                 height: 30px;
                 background-color: rgba(255, 255, 255, 0.1);
                 font-family: v.$fuenteTitulos;
+            }
+        }
+    }
+}
+
+@include m.mobile {
+    .mainContacto {
+        height: auto;
+
+        .textContacto {
+            padding: 20px 10px 0px 10px;
+            font-size: 15px;
+        }
+
+        .formularioContacto {
+            padding: 20px 10px 0px 30px;
+
+            .cajaFormulario {
+                width: auto;
+
+                .titulosFormularios {
+                    font-size: 15px;
+                }
+
+                input {
+                    width: 280px;
+                }
+
+                .textAreaContacto {
+                    width: 280px;
+                }
+            }
+
+            .buttonEnviar {
+                padding-top: 25px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+@include m.tablet {
+    .mainContacto {
+        height: auto;
+
+        .textContacto {
+            padding: 20px 10px 0px 10px;
+            font-size: 15px;
+
+            p {
+                margin-bottom: 0px;
+
+            }
+        }
+
+        .formularioContacto {
+            padding: 20px 0px 0px 30px;
+
+            .cajaFormulario {
+                width: auto;
+
+                .titulosFormularios {
+                    font-size: 15px;
+                }
+
+                .textAreaContacto {
+                    width: 500px;
+                }
+            }
+
+            .buttonEnviar {
+                padding-top: 25px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+@include m.notebookS {
+    .mainContacto {
+        height: auto;
+
+        .textContacto {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            font-size: 15px;
+
+            p {
+                margin-bottom: 0px;
+
+            }
+        }
+
+        .formularioContacto {
+            display: flex;
+            align-items: center;
+
+            .cajaFormulario {
+                width: auto;
+
+                .titulosFormularios {
+                    font-size: 15px;
+                }
+
+                .textAreaContacto {
+                    width: 500px;
+                }
+            }
+
+            .buttonEnviar {
+                padding-top: 25px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@include m.desktop {
+    .mainContacto {
+        height: 85vh;
+
+        .textContacto {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            font-size: 30px;
+
+            p {
+                margin-bottom: 0px;
+
+            }
+        }
+
+        .formularioContacto {
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            gap:50px;
+            .cajaFormulario {
+                width: auto;
+
+                .titulosFormularios {
+                    font-size: 30px;
+                }
+
+                input {
+                    width: 800px;
+                    height: 80px;
+                }
+
+                .textAreaContacto {
+                    width: 800px;
+                }
+            }
+
+            .buttonEnviar {
+                padding-top: 25px;
+                margin-bottom: 30px;
+                .textoEnviar{
+                    height: 80px;
+                    width: 300px;
+                    font-size: 25px;
+                }
             }
         }
     }
