@@ -1414,5 +1414,165 @@ section.wp a.wa img {
     height: 25px;
   }
 }
+.mainPreguntas {
+  height: auto;
+}
+.mainPreguntas .mx-auto {
+  margin-top: 10px;
+  padding-left: 20%;
+  margin-bottom: 10px;
+}
+.mainPreguntas .mx-auto nav ol li {
+  font-size: 15px;
+}
+.mainPreguntas .cajaPreguntas {
+  margin: 50px 20% 50px 20%;
+  border: 2px solid rgba(164, 164, 164, 0.552);
+  border-radius: 5px;
+  height: auto;
+}
+.mainPreguntas .cajaPreguntas .preguntas {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.mainPreguntas .cajaPreguntas .preguntas .cajaIndividual {
+  height: auto;
+  border-bottom: 1px solid rgba(145, 145, 145, 0.699);
+  padding-bottom: 20px;
+}
+.mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales {
+  display: flex;
+  align-items: center;
+}
+.mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales img {
+  height: 40px;
+}
+.mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales .camioncito {
+  height: 30px;
+  width: auto;
+}
+.mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales h2 {
+  margin-bottom: 0;
+  font-family: "Red Hat Mono";
+  font-size: 25px;
+}
+.mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales h2 .textMayusc {
+  text-transform: uppercase;
+}
+.mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .respuestas {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .respuestas p {
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .mainPreguntas .mx-auto {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 5%;
+  }
+  .mainPreguntas .cajaPreguntas {
+    margin: 40px 5% 20px 5%;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas {
+    padding: 20px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales img {
+    height: 20px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales .camioncito {
+    height: 15px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales h2 {
+    font-size: 20px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .respuestas {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .respuestas p {
+    font-size: 12.5px;
+  }
+}
+@media (min-width: 576px) and (max-width: 769px) {
+  .mainPreguntas .mx-auto {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 5%;
+  }
+  .mainPreguntas .cajaPreguntas {
+    margin: 30px 5% 20px 5%;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas {
+    padding: 25px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales img {
+    height: 23px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales .camioncito {
+    height: 18px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales h2 {
+    font-size: 21px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .respuestas {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .respuestas p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 770px) and (max-width: 1025px) {
+  .mainPreguntas .mx-auto {
+    margin-bottom: 0;
+  }
+  .mainPreguntas .cajaPreguntas {
+    margin: 40px 20% 40px 20%;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas {
+    padding: 30px;
+    gap: 22.5px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales img {
+    height: 35px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales .camioncito {
+    height: 28px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales h2 {
+    font-size: 23.5px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .respuestas p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1921px) {
+  .mainPreguntas .mx-auto nav ol li {
+    font-size: 22.5px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas {
+    gap: 35px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual {
+    border-bottom: 3px solid rgba(145, 145, 145, 0.699);
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales img {
+    height: 50px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales .camioncito {
+    height: 38px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .preguntasIndividuales h2 {
+    font-size: 33px;
+  }
+  .mainPreguntas .cajaPreguntas .preguntas .cajaIndividual .respuestas p {
+    font-size: 25px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
