@@ -19,7 +19,7 @@
             gap: 1vh;
             padding-top: 7.2vh;
 
-            h3 {
+            h2 {
                 font-family: v.$fuenteTitulos;
                 font-size: 18px;
             }
@@ -109,7 +109,7 @@
                 padding-top: 10px;
                 @include m.flex(row, nowrap, center, center);
 
-                h3 {
+                h2 {
                     font-size: 15px;
                     margin-bottom: 0px;
                 }
@@ -192,7 +192,7 @@
             .tituloFiltro {
                 padding-top: 40px;
 
-                h3 {
+                h2 {
                     font-size: 17.5px;
                 }
             }
@@ -299,7 +299,7 @@
             padding-left: 80px;
 
             .tituloFiltro {
-                h3 {
+                h2 {
                     font-size: 30px;
                 }
 
