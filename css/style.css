@@ -769,7 +769,7 @@ section.wp a.wa img {
   gap: 1vh;
   padding-top: 7.2vh;
 }
-.mainCatalogo .filtrosCategoria .tituloFiltro h3 {
+.mainCatalogo .filtrosCategoria .tituloFiltro h2 {
   font-family: "Red Hat Mono";
   font-size: 18px;
 }
@@ -842,7 +842,7 @@ section.wp a.wa img {
     justify-content: center;
     align-items: center;
   }
-  .mainCatalogo .filtrosCategoria .tituloFiltro h3 {
+  .mainCatalogo .filtrosCategoria .tituloFiltro h2 {
     font-size: 15px;
     margin-bottom: 0px;
   }
@@ -892,7 +892,7 @@ section.wp a.wa img {
   .mainCatalogo .filtrosCategoria .tituloFiltro {
     padding-top: 40px;
   }
-  .mainCatalogo .filtrosCategoria .tituloFiltro h3 {
+  .mainCatalogo .filtrosCategoria .tituloFiltro h2 {
     font-size: 17.5px;
   }
   .mainCatalogo .cajaCatalogo {
@@ -961,7 +961,7 @@ section.wp a.wa img {
     width: auto;
     padding-left: 80px;
   }
-  .mainCatalogo .filtrosCategoria .tituloFiltro h3 {
+  .mainCatalogo .filtrosCategoria .tituloFiltro h2 {
     font-size: 30px;
   }
   .mainCatalogo .filtrosCategoria .tituloFiltro .botonesFiltros {
